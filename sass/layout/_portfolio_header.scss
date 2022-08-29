@@ -16,8 +16,8 @@
   color: var(--title-text-color);
   background-color: #f5f4fa;
   cursor: pointer;
-  transition: background-color var(--anim250-cubic-bezier), color var(--anim250-cubic-bezier),
-    box-shadow var(--anim250-cubic-bezier);
+  transition: background-color var(--anim250-cubic-bezier),
+    color var(--anim250-cubic-bezier), box-shadow var(--anim250-cubic-bezier);
 
   .current-btn,
   &:hover,
@@ -47,5 +47,3 @@
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
-

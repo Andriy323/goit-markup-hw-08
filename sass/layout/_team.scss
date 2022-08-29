@@ -1,10 +1,8 @@
 .team-section {
   background: #f5f4fa;
- 
 }
 
 .team-title {
-  
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
@@ -12,9 +10,9 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
-line-height: 1.66;
+    line-height: 1.66;
   }
 }
 
@@ -24,46 +22,35 @@ line-height: 1.66;
   list-style: none;
   justify-content: center;
   align-items: center;
-  
+
   gap: 30px;
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     justify-content: center;
     align-items: center;
   }
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     justify-content: center;
     align-items: center;
   }
-  
-  
-  
 }
 
 .team-items {
-  
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-    @media screen and (min-width:480px) {
-      width: 450px;
-    }
-    
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 
-    @media screen and (min-width:768px) {
-      width: calc((100% - 30px) / 2);
-      width: 354px;
-      
-   
-    }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+    width: 354px;
+  }
 
-    @media screen and (min-width:1200px) {
-      width: 270px;
-    }
-     
-    
-
-  
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .team-block-name {
@@ -105,7 +92,8 @@ line-height: 1.66;
   justify-content: center;
   background-color: var(--white-color);
   color: #afb1b8;
-  transition: background-color var(--anim250-cubic-bezier), color var(--anim250-cubic-bezier);
+  transition: background-color var(--anim250-cubic-bezier),
+    color var(--anim250-cubic-bezier);
 
   &:hover,
   &:focus {

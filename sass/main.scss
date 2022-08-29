@@ -4,8 +4,9 @@
 @import './utils/variables';
 @import './utils/reset';
 @import './utils/mixin';
+@import './utils/hidden';
 
-
+@import './components/container';
 @import './components/modal';
 @import './components/logo';
 @import './components/section';

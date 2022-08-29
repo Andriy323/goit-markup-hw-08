@@ -17,39 +17,104 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body>
     <header class="header">
-      <div class="container main-nav">
-        <nav class="nav">
-          <a href="/" class="nav-link-logo link"
-            ><span class="logo">Web</span><span class="logo-secondary">Studio</span></a
-          >
-          <ul class="site-nav list">
-            <li class="nav-item"><a href="./index.html" class="nav-link link">Студія</a></li>
+      <div class="container mob-width">
+        <div class="main-nav">
+          <nav class="nav">
+            <a href="/" class="nav-link-logo link"
+              ><span class="logo">Web</span
+              ><span class="logo-secondary">Studio</span></a
+            >
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link link">Студія</a>
+              </li>
+              <li class="nav-item">
+                <a href="./portfolio.html" class="nav-link current link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="menu-open" type="button">
+            <svg class="menu-open-svg" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu_open"></use>
+            </svg>
+          </button>
+
+          <ul class="nav-address-list">
             <li class="nav-item">
-              <a href="./portfolio.html" class="nav-link current link">Портфоліо</a>
+              <a href="mailto:info@devstudio.com" class="nav-link-address link"
+                ><svg class="phone-icons" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope-h"></use></svg
+                >info@devstudio.com</a
+              >
             </li>
-            <li class="nav-item"><a href="" class="nav-link link">Контакти</a></li>
+            <li class="nav-item">
+              <a href="tel:+380961111111" class="nav-link-address link">
+                <svg class="phone-icons" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone-h"></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
           </ul>
-        </nav>
-        <ul class="site-nav list">
-          <li class="nav-item">
-            <a href="mailto:info@devstudio.com" class="nav-link-address link"
-              ><svg class="phone-icons" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope-h"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="tel:+380961111111" class="nav-link-address link">
-              <svg class="phone-icons" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone-h"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
+
+        <div class="mob-menu backdrop is-hidden">
+          <button class="menu-close" type="button">
+            <svg class="menu-close-svg" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu_close"></use>
+            </svg>
+          </button>
+          <div class="mob-menu-top">
+            <ul class="mob-list">
+              <li class="mob-item"><a href="" class="mob-link">Студія</a></li>
+              <li class="mob-item">
+                <a href="./portfolio.html" class="mob-link current"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mob-item"><a href="" class="mob-link">Контакти</a></li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="mob-list">
+              <li class="mob-item">
+                <a href="tel:+380961111111" class="mob-link-address link">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-link-address link"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-soc-list">
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">Instagram</a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">Twitter</a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">Facebook</a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -58,7 +123,13 @@
           <h1 class="text-hidden">портфолио</h1>
           <ul class="btn-list">
             <li class="btn-items">
-              <button type="button" id="test-b" class="portfolio-btn current-btn">Усі</button>
+              <button
+                type="button"
+                id="test-b"
+                class="portfolio-btn current-btn"
+              >
+                Усі
+              </button>
             </li>
             <li class="btn-items">
               <button type="button" class="portfolio-btn">Веб-сайти</button>
@@ -66,7 +137,9 @@
             <li class="btn-items">
               <button type="button" class="portfolio-btn">Додатки</button>
             </li>
-            <li class="btn-items"><button type="button" class="portfolio-btn">Дизайн</button></li>
+            <li class="btn-items">
+              <button type="button" class="portfolio-btn">Дизайн</button>
+            </li>
             <li class="btn-items">
               <button type="button" class="portfolio-btn">Маркетинг</button>
             </li>
@@ -75,11 +148,37 @@
             <li class="project-item">
               <a href="" class="project-link link" id="a">
                 <div class="project-img">
-                  <img src="./images/p-img1.jpg" width="370" id="img" alt="Ноутбук" />
-                  <p class="project-text" id="p">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-one-desk-min.jpg    1x,
+                        ./images/img-one-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-one-tablet-min.jpg    1x,
+                        ./images/img-one-tablet-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
 
+                    <source
+                      srcset="
+                        ./images/img-one-mob-min.jpg    1x,
+                        ./images/img-one-mob-2x-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/img-one-desk-min.jpg " alt="Ноутбук" />
+                  </picture>
+                  <!-- <img src="./images/p-img1.jpg" width="370" id="img" alt="Ноутбук" /> -->
+                  <p class="project-text" id="p">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="project-border" id="hD">
@@ -91,15 +190,43 @@
             <li class="project-item">
               <a href="" class="project-link link">
                 <div class="project-img">
-                  <img src="./images/p-img2.jpg" width="370" alt="Постер" />
-                  <p class="project-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-two-desk-min.jpg    1x,
+                        ./images/img-two-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-two-tablet-min.jpg    1x,
+                        ./images/img-two-tablet-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
 
+                    <source
+                      srcset="
+                        ./images/img-two-mob-min.jpg    1x,
+                        ./images/img-two-mob-2x-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/img-two-desk-min.jpg " alt="Постер" />
+                  </picture>
+                  <!-- <img src="./images/p-img2.jpg" width="370" alt="Постер" /> -->
+                  <p class="project-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="project-border">
-                  <h2 class="portfolio-title">Постер New Orlean vs Golden Star</h2>
+                  <h2 class="portfolio-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
                   <p class="portfolio-after-title">Дизайн</p>
                 </div>
               </a>
@@ -107,43 +234,125 @@
             <li class="project-item">
               <a href="#" class="project-link link">
                 <div class="project-img">
-                  <img src="./images/p-img3.jpg" width="370" alt="Логотип" />
-                  <p class="project-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-three-desk-min.jpg    1x,
+                        ./images/img-three-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-three-tablet-min.jpg    1x,
+                        ./images/img-three-tablet-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
 
+                    <source
+                      srcset="
+                        ./images/img-three-mob-min.jpg    1x,
+                        ./images/img-three-mob-2x-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/img-three-desk-min.jpg " alt="Логотип" />
+                  </picture>
+                  <!-- <img src="./images/p-img3.jpg" width="370" alt="Логотип" /> -->
+                  <p class="project-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
+
                 <div class="project-border">
                   <h2 class="portfolio-title">Ресторан Seafood</h2>
                   <p class="portfolio-after-title">Додаток</p>
                 </div>
               </a>
             </li>
+
             <li class="project-item">
               <a href="" class="project-link link">
                 <div class="project-img">
-                  <img src="./images/p-img4.jpg" width="370" alt="Наушники" />
-                  <p class="project-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-four-desk-min.jpg    1x,
+                        ./images/img-four-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-four-tablet-min.jpg    1x,
+                        ./images/img-four-tablet-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
 
+                    <source
+                      srcset="
+                        ./images/img-four-mob-min.jpg    1x,
+                        ./images/img-four-mob-2x-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/img-four-desk-min.jpg " alt="Наушники" />
+                  </picture>
+                  <!-- <img src="./images/p-img4.jpg" width="370" alt="Наушники" /> -->
+                  <p class="project-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
+
                 <div class="project-border">
                   <h2 class="portfolio-title">Проєкт Prime</h2>
                   <p class="portfolio-after-title">Маркетинг</p>
                 </div>
               </a>
             </li>
+
             <li class="project-item">
               <a href="" class="project-link link">
                 <div class="project-img">
-                  <img src="./images/p-img5.jpg" width="370" alt="Боксы" />
-                  <p class="project-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-five-desk-min.jpg    1x,
+                        ./images/img-five-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-five-tablet-min.jpg    1x,
+                        ./images/img-five-tablet-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
 
+                    <source
+                      srcset="
+                        ./images/img-five-mob-min.jpg    1x,
+                        ./images/img-five-mob-2x-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/img-five-desk-min.jpg " alt="Боксы" />
+                  </picture>
+                  <!-- <img src="./images/p-img5.jpg" width="370" alt="Боксы" /> -->
+                  <p class="project-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="project-border">
@@ -152,14 +361,41 @@
                 </div>
               </a>
             </li>
+
             <li class="project-item">
               <a href="" class="project-link link">
                 <div class="project-img">
-                  <img src="./images/p-img6.jpg" width="370" alt="Монитор" />
-                  <p class="project-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-six-desk-min.jpg    1x,
+                        ./images/img-six-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-six-tablet-min.jpg    1x,
+                        ./images/img-six-tablet-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
 
+                    <source
+                      srcset="
+                        ./images/img-six-mob-min.jpg    1x,
+                        ./images/img-six-mob-2x-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/img-six-desk-min.jpg " alt="Монитор" />
+                  </picture>
+                  <!-- <img src="./images/p-img6.jpg" width="370" alt="Монитор" /> -->
+                  <p class="project-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="project-border">
@@ -168,14 +404,41 @@
                 </div>
               </a>
             </li>
+
             <li class="project-item">
               <a href="" class="project-link link">
                 <div class="project-img">
-                  <img src="./images/p-img7.jpg" width="370" alt="Книга" />
-                  <p class="project-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. 
-                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-seven-desk-min.jpg    1x,
+                        ./images/img-seven-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-seven-tablet-min.jpg    1x,
+                        ./images/img-seven-tablet-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
 
+                    <source
+                      srcset="
+                        ./images/img-seven-mob-min.jpg    1x,
+                        ./images/img-seven-mob-2x-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/img-seven-desk-min.jpg " alt="Книга" />
+                  </picture>
+                  <!-- <img src="./images/p-img7.jpg" width="370" alt="Книга" /> -->
+                  <p class="project-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="project-border">
@@ -184,14 +447,41 @@
                 </div>
               </a>
             </li>
+
             <li class="project-item">
               <a href="" class="project-link link">
                 <div class="project-img">
-                  <img src="./images/p-img8.jpg" width="370" alt="Бренд" />
-                  <p class="project-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-eight-desk-min.jpg    1x,
+                        ./images/img-eight-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-eight-tablet-min.jpg    1x,
+                        ./images/img-eight-tablet-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
 
+                    <source
+                      srcset="
+                        ./images/img-eight-mob-min.jpg    1x,
+                        ./images/img-eight-mob-2x-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img src="./images/img-eight-desk-min.jpg " alt="Бренд" />
+                  </picture>
+                  <!-- <img src="./images/p-img8.jpg" width="370" alt="Бренд" /> -->
+                  <p class="project-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="project-border">
@@ -200,14 +490,44 @@
                 </div>
               </a>
             </li>
+
             <li class="project-item">
               <a href="" class="project-link link">
                 <div class="project-img">
-                  <img src="./images/p-img9.jpg" width="370" alt="Работа за ноутбуком" />
-                  <p class="project-text">
-                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
-                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/img-nine-desk-min.jpg    1x,
+                        ./images/img-nine-desk-2x-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/img-nine-tablet-min.jpg    1x,
+                        ./images/img-nine-tablet-2x-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
 
+                    <source
+                      srcset="
+                        ./images/img-nine-mob-min.jpg    1x,
+                        ./images/img-nine-mob-2x-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/img-nine-desk-min.jpg "
+                      alt="Работа за ноутбуком"
+                    />
+                  </picture>
+                  <!-- <img src="./images/p-img9.jpg" width="370" alt="Работа за ноутбуком" /> -->
+                  <p class="project-text">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
                 <div class="project-border">
@@ -220,11 +540,12 @@
         </div>
       </section>
     </main>
-     <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-address">
           <a href="/" class="footer-link-logo link"
-            ><span class="logo">Web</span><span class="footer-logo">Studio</span></a
+            ><span class="logo">Web</span
+            ><span class="footer-logo">Studio</span></a
           >
 
           <address class="address">
@@ -239,10 +560,14 @@
               </li>
 
               <li class="footer-items">
-                <a href="mailto:info@example.com" class="footer-link link">info@example.com</a>
+                <a href="mailto:info@example.com" class="footer-link link"
+                  >info@example.com</a
+                >
               </li>
               <li class="footer-items">
-                <a href="tel:+380991111111" class="footer-link link">+38 099 111 11 11</a>
+                <a href="tel:+380991111111" class="footer-link link"
+                  >+38 099 111 11 11</a
+                >
               </li>
             </ul>
           </address>
@@ -290,6 +615,7 @@
               class="footer-input"
               id="footer-email"
               placeholder="E-mail"
+              autocomplete="off"
             />
             <button type="button" class="footer-form-btn">
               Підписатися
@@ -303,5 +629,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
-</html> 
+</html>
