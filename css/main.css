@@ -446,9 +446,38 @@ body {
   color: var(--accent-color);
 }
 
+.mail-icons {
+  margin-right: 10px;
+  fill: currentColor;
+}
+@media screen and (min-width: 768px) {
+  .mail-icons {
+    width: 14px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mail-icons {
+    width: 16px;
+    height: 12px;
+  }
+}
+
 .phone-icons {
   margin-right: 10px;
   fill: currentColor;
+}
+@media screen and (min-width: 768px) {
+  .phone-icons {
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .phone-icons {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .mob-menu {
