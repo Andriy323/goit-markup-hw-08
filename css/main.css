@@ -502,12 +502,6 @@ body {
   right: 15px;
 }
 
-@media screen and (max-width: 767px) {
-  .container.mob-width {
-    width: 100%;
-  }
-}
-
 .mob-link {
   font-weight: 500;
   font-size: 40px;
@@ -696,14 +690,13 @@ body {
 }
 
 .style-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .style-list {
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    list-style: none;
     margin: 0 auto;
   }
 }
@@ -844,7 +837,8 @@ body {
 @media screen and (min-width: 1200px) {
   .team-title {
     font-size: 36px;
-    line-height: 1.66;
+    line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
@@ -946,12 +940,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .client-title {
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 
@@ -1268,7 +1263,6 @@ body {
   flex-wrap: wrap;
   gap: 8px;
   row-gap: 15px;
-  justify-content: center;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 480px) {
@@ -1278,6 +1272,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .btn-list {
+    justify-content: center;
     margin-bottom: 30px;
   }
 }
@@ -1288,7 +1283,6 @@ body {
 }
 
 .btn-items {
-  margin-right: 8px;
   list-style: none;
 }
 .btn-items:last-child {
@@ -1299,7 +1293,6 @@ body {
   gap: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
